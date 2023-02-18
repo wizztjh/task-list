@@ -1,5 +1,3 @@
-/// <reference path="../typings/node/node.d.ts" />
-
 import readline = require('readline');
 import util = require('util');
 
@@ -43,8 +41,8 @@ export class TaskList
     }
 
     println(ln: string) {
-        this.readline.output.write(ln);
-        this.readline.output.write('\n');
+        this.readline.write(ln);
+        this.readline.write('\n');
     }
 
     run() {
